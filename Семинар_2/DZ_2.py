@@ -28,13 +28,10 @@
 
 # S = int (input('Введите сумму чисел: '))
 # P = int (input('Введите произведение чисел: '))
-# x = 0
+
 # for i in range(S):
-#   if x:
-#     break
 #   for y in range(P):
-#     if i + y == S and i * y == P:
-#       x = 1
+#     if S == i + y and P == i * y:
 #       print(f"Петя задумал числа {i} и {y}")
 #       break
 
@@ -55,3 +52,9 @@
 #     else:
 #       i = i * 2
 #       print(i)
+# ВЕРНОЕ
+# n = int(input())
+# i = 0
+# while 2 ** i <= n:
+#     print(2 ** i)
+#     i += 1
