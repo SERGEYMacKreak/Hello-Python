@@ -20,6 +20,17 @@ Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
 #         dict[element] = 0
 #         print(element, end =" ")
 
+# решение преподователя
+
+# lst_1 = input().split()
+# result = {}
+# for i in lst_1:
+#     if i in result:
+#         result[i] += 1
+#         print(f"{i}_{result[i]}",end = " ")
+#     else:
+#         result[i] = 0
+#         print(i,end = " ")
 
 # ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
@@ -41,6 +52,7 @@ Output: 13
 #     if i not in dict:
 #         dict.append(i)
 # print(len(dict))
+
 
 # ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
