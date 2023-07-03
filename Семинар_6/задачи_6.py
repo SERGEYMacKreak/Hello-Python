@@ -53,15 +53,15 @@
 0				    2
 
 '''
-N = int(input('Введите N: '))
-print(N)
-li1 = [int(input('Введите число: ')) for _ in range(N)]
-print(*li1)
-cooint = 0
-for i in range(1, len(li1)-1):
-    if li1[i-1] < li1[i] > li1[i+1]:
-        cooint += 1
-print(cooint)
+# N = int(input('Введите N: '))
+# print(N)
+# li1 = [int(input('Введите число: ')) for _ in range(N)]
+# print(*li1)
+# cooint = 0
+# for i in range(1, len(li1)-1):
+#     if li1[i-1] < li1[i] > li1[i+1]:
+#         cooint += 1
+# print(cooint)
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -74,15 +74,66 @@ print(cooint)
 1 2 3 2 3			      2
 
 '''
-N = int(input('Введите N: '))
-print(N)
-li1 = [int(input('Введите число: ')) for i in range(N)]
-print(*li1)
-n = 0
-d = {}
-for i in li1:
-    if i in d:
-        n += d[i]
-    d[i] = d.get(i, 0) + 1 # если ключ повторяется счетчик +1
+# решение через словарь
+# N = int(input('Введите N: '))
+# print(N)
+# li1 = [int(input('Введите число: ')) for i in range(N)]
+# print(*li1)
+# n = 0
+# d = {}
+# for i in li1:
+#     if i in d:
+#         n += d[i]
+#     d[i] = d.get(i, 0) + 1 # если ключ повторяется счетчик +1
 
-print(n)
+# print(n)
+
+
+# import random
+# n = int(input("введи размер списка1: "))
+# list1 = []
+# for i in range(n):
+#     lis1 = random.randint(1, 10)
+#     list1.append(lis1)
+# print(*list1)
+# count = 0
+# for i in range(len(list1)):
+#     for j in range(i+1, len(list1)):
+#         if list1[i] == list1[j]:
+#             count += 1
+# print(count)
+
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+'''''''''''
+Задача №45. Решение в группах
+Два различных натуральных числа n и m называются дружественными, если сумма делителей числа n (включая 1, но исключая само n)
+равна числу m и наоборот. Например, 220 и 284 – дружественные числа.
+По данному числу k выведите все пары дружественных чисел, каждое из которых не превосходит k.
+Программа получает на вход одно натуральное число k, не превосходящее 105. 
+Программа должна вывести  все пары дружественных чисел, каждое из которых не превосходит k. 
+Пары необходимо выводить по одной в строке, разделяя пробелами. 
+Каждая пара должна быть выведена только один раз (перестановка чисел новую пару не дает).
+Ввод:			Вывод:
+300			     220 284
+
+'''
+
+# k = int(input())
+
+# array = []
+
+# for i in range(k): 
+#     summ = 0
+#     for j in range(1, i):
+#         if i % j == 0:
+#             summ += j
+#     array.append([i,summ])
+# #print(array)
+        
+# for i in range(1,len(array)):
+#     for j in range(i + 1,len(array)):
+#         b = array[i]
+#         c = array[j]
+#         if b[0] == c[1] and b[1] == c[0]:
+#             print(b)
