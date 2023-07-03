@@ -57,11 +57,11 @@
 # print(N)
 # li1 = [int(input('Введите число: ')) for _ in range(N)]
 # print(*li1)
-# cooint = 0
+# count = 0
 # for i in range(1, len(li1)-1):
 #     if li1[i-1] < li1[i] > li1[i+1]:
-#         cooint += 1
-# print(cooint)
+#         count += 1
+# print(count)
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
