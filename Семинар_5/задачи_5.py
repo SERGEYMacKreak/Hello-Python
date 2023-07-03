@@ -82,10 +82,15 @@ Output: yes
 Input: 2 -> 3 4
 Output: 4 3
 """""
-# def d (nomber):
-#     if (nomber > 0):
-#         return (nomber + d(nomber - 1))
-#     return 0
+# def recr(nomber):    ввод массива с помощью рекурсии без её объявлкения и цикла фор
+#     k = input()
+#     if n == 0:
+#         return k
+#     a = recr(n-1) + k
+#     print(a)
+#     return a
+# n = 4
+# print(recr(4))
 
 # def dddddd (list_2):
 #     if not list_2:
