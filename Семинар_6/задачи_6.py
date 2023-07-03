@@ -74,3 +74,15 @@ print(cooint)
 1 2 3 2 3			      2
 
 '''
+N = int(input('Введите N: '))
+print(N)
+li1 = [int(input('Введите число: ')) for i in range(N)]
+print(*li1)
+n = 0
+d = {}
+for i in li1:
+    if i in d:
+        n += d[i]
+    d[i] = d.get(i, 0) + 1 # если ключ повторяется счетчик +1
+
+print(n)
