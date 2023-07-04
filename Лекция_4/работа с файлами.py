@@ -36,12 +36,12 @@
 #   colors = ['red', 'green', 'blue']
 #   data = open('file.txt', 'a') # здесь указываем режим, в котором будем работать
 #   data.writelines(colors) # разделителей не будет
-#   data.close()
+#   data.close() # после открытия мы должны будем его закрыть
 #     ● data.close() — используется для закрытия файла, чтобы разорвать подключение файловой переменной с файлом на диске.
 #     ● exit() — позволяет не выполнять код, прописанный после этой команды в скрипте.
 #     ● В итоге создаётся текстовый файл с текстом внутри: 'redbluedreen'.
 #     ● При повторном выполнении скрипта 'redbluedreenredbluedreen' — добавление в существующий файл, а не перезапись файлов.
-# Ещё один способ записи данных в файл:
+#   Ещё один способ записи данных в файл:
 #   with open('file.txt', 'w') as data:
 #     data.write('line 1\n')
 #     data.write('line 2\n')
@@ -88,10 +88,9 @@
 #             ○ os.path.basename(path) - базовое имя пути
 #                 import os
 #                 print(os.path.basename('C:/Users/79190/PycharmProjects/webproject/main.py')) # 'main.py'
-
-#     ● os.path.abspath(path) - возвращает нормализованный абсолютный путь.
-#         import os
-#         print(os.path.abspath('main.py')) # 'C:/Users/79190/PycharmProjects/webproject/main.py'
+#             ● os.path.abspath(path) - возвращает нормализованный абсолютный путь.
+#                 import os
+#                 print(os.path.abspath('main.py')) # 'C:/Users/79190/PycharmProjects/webproject/main.py'
 
 
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
