@@ -14,17 +14,15 @@ def main():
                 search_name(s)
                 print("Успешно найдено \n")
             case 3:
-                name = input_name()
-                write_name(name)
-                print("Успешно удалено \n")
+                d = input_delit()
+
+            case 4:
+                rename = input_rename()
+
             case 4:
                 name = input_name()
                 write_name(name)
-                print("Успешно найдено \n")
-            case 5:
-                name = input_name()
-                write_name(name)
-                print("Успешно переместил \n")
+                print("Успешно отсортированно \n")  
             case 6:
                 print("Выход")
                 return()
