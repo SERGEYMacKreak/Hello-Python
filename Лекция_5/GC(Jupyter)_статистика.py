@@ -37,7 +37,7 @@
     | - выполнение хотя бы одного из условия.
 
 вывод только нескольких интересующих нас столбцов с ограничением для получения данных:  
-# df[df['housing_median_age'] < 20, 'total_rooms']
+# df[(df['median_income'] < 2)][['median_house_value']]
 или (если необходимо вывести 2 и более столбцов
 # df[df['housing_median_age'] < 20, ['total_bedrooms', 'total_rooms']]
 
